@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">O Mago Dice Game</string>
+    <string name="jogar_d6">Jogar D6</string>
+    <string name="jogar_d12">Jogar D12</string>
+    <string name="jogar_d20">Jogar D20</string>
+    <string name="dice_game">DICE GAME</string>
+</resources>

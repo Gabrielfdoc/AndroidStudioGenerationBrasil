@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">DesenvolvMedPrototipo</string>
+    <string name="nova_postagem">Nova postagem</string>
+    <string-array name="temas">
+        <item name="vacina" type="string">Vacina</item>
+        <item name="consultas" type="string">Consulta</item>
+        <item name="DoencasAutoimunes" type="string">Doenças auto imunes</item>
+        <item name="DSTS" type="string">DSTS</item>
+    </string-array>
+    <string name="tema_da_postagem">Tema da postagem:</string>
+    <string name="t_tulo_da_postagem">Título da Postagem:</string>
+    <string name="digite_aqui_sua_postagem">Digite aqui sua postagem:</string>
+    <string name="anexo_opcional">Anexo (Opcional)</string>
+</resources>

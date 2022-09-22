@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tema_da_postagem">Tema da postagem:</string>
+    <string name="t_tulo_da_postagem">Título da Postagem</string>
+    <string name="digite_aqui_sua_postagem">Digite aqui sua postagem:</string>
+    <string name="anexo_opcional">Anexo (Opcional)</string>
+</resources>
