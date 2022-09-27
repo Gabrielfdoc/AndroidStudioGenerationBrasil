@@ -1,8 +1,7 @@
-package com.gabrferr.todolistandroid.presenter
+package com.gabrferr.todolistandroid
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.gabrferr.todolistandroid.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

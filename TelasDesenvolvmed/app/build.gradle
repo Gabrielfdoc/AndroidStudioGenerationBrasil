@@ -7,19 +7,17 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.gabrferr.todolistandroid"
-        minSdk 26
+        applicationId "com.generation.telasdesenvolvmed"
+        minSdk 23
         targetSdk 32
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-
-    viewBinding {
+    viewBinding{
         enabled = true
     }
-
     buildTypes {
         release {
             minifyEnabled false

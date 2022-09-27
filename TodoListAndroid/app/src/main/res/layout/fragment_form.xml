@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".FormFragment" >
 
-    <EditText
-        android:id="@+id/editNome"
+    <EditText        android:id="@+id/editNome"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -21,8 +20,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/editDescricao"
+    <EditText        android:id="@+id/editDescricao"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -36,8 +34,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editNome" />
 
-    <EditText
-        android:id="@+id/editResponsavel"
+    <EditText        android:id="@+id/editResponsavel"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -51,8 +48,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editDescricao" />
 
-    <EditText
-        android:id="@+id/editData"
+    <EditText        android:id="@+id/editData"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -67,8 +63,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editResponsavel" />
 
-    <Switch
-        android:id="@+id/switchAtivoCard"
+    <Switch        android:id="@+id/switchAtivoCard"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -81,8 +76,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editData" />
 
-    <Spinner
-        android:id="@+id/spinnerCategoria"
+    <Spinner        android:id="@+id/spinnerCategoria"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -94,8 +88,7 @@
         app:layout_constraintTop_toBottomOf="@+id/switchAtivoCard"
         tools:ignore="SpeakableTextPresentCheck" />
 
-    <Button
-        android:id="@+id/buttonSalvar"
+    <Button        android:id="@+id/buttonSalvar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
