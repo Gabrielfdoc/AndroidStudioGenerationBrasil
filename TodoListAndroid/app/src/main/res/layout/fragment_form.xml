@@ -48,22 +48,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editDescricao" />
 
-    <EditText        android:id="@+id/editData"
+    <EditText
+        android:id="@+id/editData"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:ems="10"
-        android:focusable="false"
         android:hint="Data"
-        android:inputType="textPersonName"
+        android:inputType="date"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editResponsavel" />
 
-    <Switch        android:id="@+id/switchAtivoCard"
+    <Switch
+        android:id="@+id/switchAtivoCard"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
