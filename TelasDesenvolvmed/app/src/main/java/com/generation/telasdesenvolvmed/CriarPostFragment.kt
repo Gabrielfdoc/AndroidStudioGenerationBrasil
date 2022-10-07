@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.generation.telasdesenvolvmed.databinding.FragmentCriarPostBinding
+import java.time.LocalDateTime
 
 class CriarPostFragment : Fragment() {
 
@@ -24,6 +25,8 @@ class CriarPostFragment : Fragment() {
         binding.botaoPublicar.setOnClickListener{
             findNavController().navigate(R.id.action_criarPostFragment_to_postFragment)
         }
+
+        val data = LocalDateTime.now()
 
         return binding.root
     }

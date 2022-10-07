@@ -56,8 +56,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:minHeight="48dp"
-            android:textSize="20sp"
-            tools:text="Em andamento" />
+            android:text="@string/em_andamento"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textCategoria"
@@ -72,6 +72,6 @@
             android:id="@+id/buttonDeletar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="Deletar Tarefa" />
+            android:text="@string/deletar_tarefa" />
     </LinearLayout>
 </androidx.cardview.widget.CardView>

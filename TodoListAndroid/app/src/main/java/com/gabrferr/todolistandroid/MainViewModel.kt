@@ -7,10 +7,13 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.gabrferr.todolistandroid.api.Repository
 import com.gabrferr.todolistandroid.model.Categoria
+import com.gabrferr.todolistandroid.model.Tarefa
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import retrofit2.Response
 import java.lang.Exception
+import java.time.LocalDate
 import javax.inject.Inject
 
 @HiltViewModel
@@ -22,8 +25,13 @@ class MainViewModel @Inject constructor(
 
 	val myCategoriaResponse: LiveData<Response<List<Categoria>>> = _myCategoriaResponse
 
-	init {
+	private val _myTarefaResponse = MutableLiveData<Response<List<Tarefa>>>()
 
+	val myTarefaResponse: LiveData<Response<List<Tarefa>>> = _myTarefaResponse
+
+	val dataSelecionada = MutableLiveData<LocalDate>()
+
+	init {
 	}
 
 	fun listCategoria() {
@@ -32,6 +40,29 @@ class MainViewModel @Inject constructor(
 
 				val response = repository.listCategoria()
 				_myCategoriaResponse.value = response
+
+			} catch (e: Exception) {
+				Log.d("Erro", e.message.toString())
+			}
+		}
+	}
+
+	fun addTarefa(tarefa: Tarefa) {
+		viewModelScope.launch {
+			try {
+				repository.addTarefa(tarefa)
+			} catch (e: Exception) {
+				Log.d("Erro", e.message.toString())
+			}
+		}
+	}
+
+	fun listTarefa() {
+		viewModelScope.launch {
+			try {
+
+				val response = repository.listTarefa()
+				_myTarefaResponse.value = response
 
 			} catch (e: Exception) {
 				Log.d("Erro", e.message.toString())
